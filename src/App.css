@@ -74,44 +74,49 @@ tbody tr:nth-child(odd) {
 }
 
 /* width of columns */
+
+
+/* Column Size for thead */
 table th:nth-child(1),
 table td:nth-child(1) {
   width: 10%;
 }
+
 
 table th:nth-child(2),
 table td:nth-child(2) {
   width: 10%;
 }
 
+
 table th:nth-child(3),
 table td:nth-child(3) {
   width: 10%;
 }
+
 
 table th:nth-child(4),
 table td:nth-child(4) {
   width: 30%;
 }
 
+
 table th:nth-child(5),
 table td:nth-child(5) {
   width: 30%;
 }
+
 
 table th:nth-child(6),
 table td:nth-child(6) {
   width: 10%;
 }
 
+
 img {
   width: 100%;
   height: 100%;
   object-fit: scale-down;
 }
-
-
-/* Column Size for thead */
-
 
 /* Column size for tbody */
