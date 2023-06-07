@@ -1,7 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
 
 .App {
-  padding: 1em;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 64px;
 }
 
 label {
@@ -19,7 +25,8 @@ html {
   font-family: 'helvetica neue', sans-serif;
 }
 
-thead th, tfoot th {
+thead th,
+tfoot th {
   font-family: 'Rock Salt';
 }
 
@@ -30,11 +37,22 @@ th {
 
 td {
   letter-spacing: 1px;
-  overflow-x:hidden;
-  overflow-y:hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   font-size: 12px;
   padding: 10px;
-  text-align: center;
+  width: 10%;
+}
+
+td.content_td {
+  overflow: auto;
+}
+
+td.content_td, p {
+  max-width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
 }
 
 /* table */
@@ -43,16 +61,55 @@ table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  overflow:hidden;
+  overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.content_td p {
-  max-width: 100%;
-  max-height: 100px;
-  overflow-y: auto;
-  text-overflow: ellipsis;
+tbody tr:nth-child(odd) {
+  background-color: #fff0c7;
 }
+
+tbody tr:nth-child(odd) {
+  background-color: #fff0c7;
+}
+
+/* width of columns */
+table th:nth-child(1),
+table td:nth-child(1) {
+  width: 10%;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+  width: 10%;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+  width: 10%;
+}
+
+table th:nth-child(4),
+table td:nth-child(4) {
+  width: 30%;
+}
+
+table th:nth-child(5),
+table td:nth-child(5) {
+  width: 30%;
+}
+
+table th:nth-child(6),
+table td:nth-child(6) {
+  width: 10%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
 
 /* Column Size for thead */
 
