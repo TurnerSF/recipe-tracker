@@ -7,22 +7,22 @@ function RecipeCreate({ addRecipe }) {
   const [ingredients, setIngredients] = useState("");
   const [preparation, setPreparation] = useState("");
 
-function handleSubmit(event){
-  event.preventDefault();
-  const newRecipe = {
-    name,
-    cuisine,
-    photo,
-    ingredients,
-    preparation,
+  function handleSubmit(event) {
+    event.preventDefault();
+    const newRecipe = {
+      name,
+      cuisine,
+      photo,
+      ingredients,
+      preparation,
+    };
+    addRecipe(newRecipe);
+    setName("");
+    setCuisine("");
+    setPhoto("");
+    setIngredients("");
+    setPreparation("");
   }
-  addRecipe(newRecipe)
-  setName("")
-  setCuisine("")
-  setPhoto("")
-  setIngredients("")
-  setPreparation("")
-}
 
   return (
     <form name="create" onSubmit={handleSubmit}>
@@ -39,8 +39,8 @@ function handleSubmit(event){
                 placeholder="Name"
                 required
               />
-              </td>
-              <td>
+            </td>
+            <td>
               <input
                 type="text"
                 id="cuisine"
@@ -50,8 +50,9 @@ function handleSubmit(event){
                 placeholder="Cuisine"
                 required
               />
-              </td>
-              <td><input
+            </td>
+            <td>
+              <input
                 type="url"
                 id="photo"
                 name="photo"
@@ -59,9 +60,10 @@ function handleSubmit(event){
                 onChange={(event) => setPhoto(event.target.value)}
                 placeholder="Photo"
                 required
-              /></td>
-              <td>
-                <textarea
+              />
+            </td>
+            <td>
+              <textarea
                 type="text"
                 id="Ingredients"
                 name="Ingredients"
@@ -70,9 +72,9 @@ function handleSubmit(event){
                 placeholder="Ingredients"
                 required
               />
-              </td>
-              <td>
-                <textarea
+            </td>
+            <td>
+              <textarea
                 type="text"
                 id="Preparations"
                 name="Preparations"
@@ -81,7 +83,7 @@ function handleSubmit(event){
                 placeholder="Preperations"
                 required
               />
-              </td>
+            </td>
             <td>
               <button type="submit">Create</button>
             </td>

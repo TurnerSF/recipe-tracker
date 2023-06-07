@@ -9,10 +9,16 @@ function RecipeList({ recipes, deleteRecipe }) {
         <td>
           <img src={recipe.photo} alt={recipe.name} width="200" height="200" />
         </td>
-        <td><p className="content_td" >{recipe.ingredients}</p></td>
-        <td><p className="content_td">{recipe.preparation}</p></td>
         <td>
-          <button onClick={() => deleteRecipe(recipe)} name='delete'>Delete</button>
+          <p className="content_td">{recipe.ingredients}</p>
+        </td>
+        <td>
+          <p className="content_td">{recipe.preparation}</p>
+        </td>
+        <td>
+          <button onClick={() => deleteRecipe(recipe)} name="delete">
+            Delete
+          </button>
         </td>
       </tr>
     ));
