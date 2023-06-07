@@ -21,8 +21,10 @@ function App() {
       <header>
         <h1>Delicious Food Recipes</h1>
       </header>
+      <>
       <RecipeList recipes={recipes} deleteRecipe={deleteRecipe} />
       <RecipeCreate addRecipe={addRecipe} />
+      </>
     </div>
   );
 }
