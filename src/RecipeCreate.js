@@ -77,7 +77,7 @@ function RecipeCreate({ addRecipe }) {
               <textarea
                 type="text"
                 id="Preparations"
-                name="Preparations"
+                name="preparation"
                 value={preparation}
                 onChange={(event) => setPreparation(event.target.value)}
                 placeholder="Preperations"
